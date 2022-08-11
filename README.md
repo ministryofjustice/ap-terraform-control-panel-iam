@@ -1,3 +1,7 @@
+# ap-terraform-control-panel-iam
+
+Creates IAM for the control panel to manage AWS resources in multiple accounts.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
