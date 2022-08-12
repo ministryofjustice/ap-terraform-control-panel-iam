@@ -6,7 +6,7 @@ module "iam_assumable_role_control_panel_api" {
   source                        = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
   version                       = "4.3.0"
   create_role                   = true
-  role_name_prefix              = "dev_control_panel_api"
+  role_name_prefix              = var.role_name_prefix
   provider_url                  = var.cluster_oidc_issurer_url
   role_policy_arns              = [aws_iam_policy.control_panel_api.arn]
   oidc_fully_qualified_subjects = ["system:serviceaccount:cpanel:cpanel-frontend"]
