@@ -12,19 +12,28 @@ Creates IAM for the control panel to manage AWS resources in multiple accounts.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.71.0 |
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_iam_assumable_role_control_panel_api"></a> [iam\_assumable\_role\_control\_panel\_api](#module\_iam\_assumable\_role\_control\_panel\_api) | terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc | 4.3.0 |
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_iam_policy.control_panel_api](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_cluster_oidc_issurer_url"></a> [cluster\_oidc\_issurer\_url](#input\_cluster\_oidc\_issurer\_url) | This is the blah | `string` | n/a | yes |
+| <a name="input_resource_prefix"></a> [resource\_prefix](#input\_resource\_prefix) | More blah | `string` | n/a | yes |
 
 ## Outputs
 
