@@ -3,8 +3,13 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 3.71.0"
+      configuration_aliases = [
+        aws.apps_account,
+        aws.data_account,
+        aws.control_panel_account,
+      ]
     }
   }
 
-  required_version = ">= 0.14.0"
+  required_version = ">= 1.2.2"
 }
