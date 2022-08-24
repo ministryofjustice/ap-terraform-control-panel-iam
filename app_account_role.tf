@@ -28,7 +28,7 @@ module "app_account_role" {
 ###############################################################################
 
 resource "aws_iam_policy" "manage_apps" {
-  name        = "ManageApplicationResources"
+  name_prefix = "ManageApplicationResources"
   description = "Policy to permit management of ${var.resource_prefix} application resources"
   policy      = data.aws_iam_policy_document.manage_apps.json
   tags        = var.tags
