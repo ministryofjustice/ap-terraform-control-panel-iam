@@ -28,7 +28,7 @@ module "data_account_role" {
 ###############################################################################
 
 resource "aws_iam_policy" "manage_data_account" {
-  name        = "ManageDataAccountResources"
+  name_prefix = "ManageDataAccountResources"
   description = "Policy to permit management of ${var.resource_prefix} data account resources"
   policy      = data.aws_iam_policy_document.manage_data_account.json
   tags        = var.tags
