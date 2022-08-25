@@ -10,7 +10,7 @@ module "data_account_role" {
   role_name_prefix    = "ControlPanelDataManager"
   trusted_entity_arns = [module.control_panel_role.iam_role_arn]
   role_description    = "Role to permit the control panel for ${var.resource_prefix} to manage data account resources"
-  role_policy_arns    = ["arn:aws:iam::aws:policy/ReadOnlyAccess"]
+  role_policy_arns    = [module.aws_iam_policy.manage_data_account.arn]
 
   tags = var.tags
 
