@@ -11,7 +11,7 @@ module "control_panel_role" {
   role_name_prefix         = "ControlPanelFederatedID"
   role_description         = "Role to identify the control panel for ${var.resource_prefix}"
   provider_url             = var.provider_url
-  role_policy_arns         = ["arn:aws:iam::aws:policy/ReadOnlyAccess"]
+  role_policy_arns         = [aws_iam_policy.allow_sts_policy.arn]
   cluster_service_accounts = [var.control_panel_service_account]
 
   tags = var.tags
