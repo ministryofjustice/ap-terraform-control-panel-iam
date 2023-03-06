@@ -33,9 +33,9 @@ It assumes that a trust relationship between the cluster OIDC provider and other
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_app_account_role"></a> [app\_account\_role](#module\_app\_account\_role) | git@github.com:ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user | v1.1.0 |
-| <a name="module_control_panel_role"></a> [control\_panel\_role](#module\_control\_panel\_role) | git@github.com:ministryofjustice/ap-terraform-iam-roles.git//eks-role | v1.1.0 |
-| <a name="module_data_account_role"></a> [data\_account\_role](#module\_data\_account\_role) | git@github.com:ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user | v1.1.0 |
+| <a name="module_app_account_role"></a> [app\_account\_role](#module\_app\_account\_role) | github.com/ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user | v1.1.0 |
+| <a name="module_control_panel_role"></a> [control\_panel\_role](#module\_control\_panel\_role) | github.com/ministryofjustice/ap-terraform-iam-roles.git//eks-role | v1.1.0 |
+| <a name="module_data_account_role"></a> [data\_account\_role](#module\_data\_account\_role) | github.com/ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user | v1.1.0 |
 
 ## Resources
 
