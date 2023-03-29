@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.71.0"
+      version = ">= 3.71.0"
       configuration_aliases = [
         aws.apps_account,
         aws.data_account,
