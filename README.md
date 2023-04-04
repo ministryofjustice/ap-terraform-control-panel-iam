@@ -18,16 +18,16 @@ It assumes that a trust relationship between the cluster OIDC provider and other
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2.2 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.71.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.71.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.71.0 |
-| <a name="provider_aws.apps_account"></a> [aws.apps\_account](#provider\_aws.apps\_account) | ~> 3.71.0 |
-| <a name="provider_aws.control_panel_account"></a> [aws.control\_panel\_account](#provider\_aws.control\_panel\_account) | ~> 3.71.0 |
-| <a name="provider_aws.data_account"></a> [aws.data\_account](#provider\_aws.data\_account) | ~> 3.71.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.71.0 |
+| <a name="provider_aws.apps_account"></a> [aws.apps\_account](#provider\_aws.apps\_account) | >= 3.71.0 |
+| <a name="provider_aws.control_panel_account"></a> [aws.control\_panel\_account](#provider\_aws.control\_panel\_account) | >= 3.71.0 |
+| <a name="provider_aws.data_account"></a> [aws.data\_account](#provider\_aws.data\_account) | >= 3.71.0 |
 
 ## Modules
 
@@ -62,5 +62,9 @@ It assumes that a trust relationship between the cluster OIDC provider and other
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_app_account_role_arn"></a> [app\_account\_role\_arn](#output\_app\_account\_role\_arn) | The ARN of the role for managing application account resources |
+| <a name="output_control_panel_role_arn"></a> [control\_panel\_role\_arn](#output\_control\_panel\_role\_arn) | The ARN of the role that identifies the control panel |
+| <a name="output_data_account_role_arn"></a> [data\_account\_role\_arn](#output\_data\_account\_role\_arn) | The ARN of the role for managing data account resources |
 <!-- END_TF_DOCS -->
