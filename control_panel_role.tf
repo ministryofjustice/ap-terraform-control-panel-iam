@@ -7,7 +7,7 @@
 ###############################################################################
 
 module "control_panel_role" {
-  source                   = "github.com/ministryofjustice/ap-terraform-iam-roles.git//eks-role?ref=v1.1.0"
+  source                   = "github.com/ministryofjustice/ap-terraform-iam-roles.git//eks-role?ref=v1.4.1"
   role_name_prefix         = "ControlPanelFederatedID"
   role_description         = "Role to identify the control panel for ${var.resource_prefix}"
   provider_url             = var.provider_url
