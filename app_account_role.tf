@@ -6,7 +6,7 @@
 ###############################################################################
 
 module "app_account_role" {
-  source              = "github.com/ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user?ref=v1.1.0"
+  source              = "github.com/ministryofjustice/ap-terraform-iam-roles.git//assumable-role-federated-user?ref=v1.4.1"
   role_name_prefix    = "ControlPanelAppManager"
   trusted_entity_arns = [module.control_panel_role.iam_role_arn]
   role_description    = "Role to permit the control panel for ${var.resource_prefix} to manage application account resources"
